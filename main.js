@@ -36,15 +36,52 @@
 
 // console.log(">\n*\n\n##\n\n***\n\n####\n\n*****\n\n#######\n\n*******\n\n########\n\n*********\n\n##########\n\n***********\n\n############\n\n||");
 
-const k = 10
-let n = 12
-while (n!==k) {
-    if(n > k){
-        console.log("число больше");    
-    }
-    if(n < k){
-        console.log("число меньше");
-    }
-    n = Number(prompt("введите число"))
+// const k = 1
+// let n = Number(prompt("введите число"))
+//  while (isNaN(n)) {
+//      n = Number(prompt("Пожалуйста введите ЧИСЛО"));
+// }
+// while (n!==k) {
+//     if(n > k){
+//         console.log("число больше");    
+//     }
+//     if(n < k){
+//         console.log("число меньше");
+//     }
+//     n = Number(prompt("введите число"))
+// }
+// console.log("число угадано");
+
+// let n = Number(prompt("введите число n"));
+// let x = Number(prompt("введите число x"));
+// let y = Number(prompt("введите число y"));
+// let string = `n = ${n}, x = ${x}, y = ${y} => `;
+// if(n%x===0 && n%y===0){
+//     console.log(string + "true") 
+// }
+// else{
+//     console.log(string + "false")
+// }
+
+let n = Number(prompt("введите номер месяца"));
+let count = 0
+while (isNaN(n)) {
+      n = Number(prompt("Пожалуйста введите Номер месяца"));
+ }
+ if (n>12 || n<1){
+    n = Number(prompt("Пожалуйста введите число меньше 13 и больше 0"));
+ }
+if (n<=3){
+    count = 1
 }
-console.log("число угадано");
+if(n>=10){
+    count = 4
+}
+if (n>3&&n<=6) {
+    count = 2
+}
+if (n>6 && n < 10) {
+    count = 3
+}
+let string = `месяц ${n} => ${count} квартал`
+console.log(string)
