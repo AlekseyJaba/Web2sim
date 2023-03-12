@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.html">
+    <link rel="stylesheet" href="CSS/reseter.css">
 </head>
 <body>
-    <h1>Волгин 211-324</h1>
+    <header>
+        <button class="reg" src="form.html"> <span>Log In</span></button>
+    </header>
+    <main>
+        <form>
+            <p>Log In</p>
+            <label>email<input  type="text" name="email" placeholder="email" value="email" required></label>
+            <label>Пароль<input  type="password" name="password" placeholder="password" value="password" minlength="6" required></label>
+            <div class="form_button">
+                <button>Показать пароль</button>
+                <button></button>
+            </div>
+        </form>
+        <h1>Волгин 211-324</h1>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
