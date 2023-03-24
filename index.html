@@ -7,25 +7,32 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.html">
-    <link rel="stylesheet" href="CSS/reseter.css">
 </head>
 <body>
     <header>
-        <button class="reg" src="form.html"> <span>Log In</span></button>
+        <button class="btn"> <span>Log In</span></button>
     </header>
-    <main>
-        <form>
-            <p>Log In</p>
-            <label>email<input  type="text" name="email" placeholder="email" value="email" required></label>
-            <label>Пароль<input  type="password" name="password" placeholder="password" value="password" minlength="6" required></label>
+    <div class="modal">
+        <form class="form" method="post">
+            <button class ="close"><img src="img/krestik.png" alt="" width="15px" height="15px"></button>
+            <p class="Log_In">Log In</p>
+            <ul>
+                <li class="input-error">            
+                    <label>email<input  type="email" name="email" placeholder="email" value="email" required></label>
+                    <p class="error"></p>
+                </li>
+                <li class="input-error">
+                    <label>Пароль<input type="password" name="password" placeholder="password" value="password" minlength = "6"  required></label>
+                    <p class="error"></p>
+                </li>
+            </ul>
             <div class="form_button">
-                <button>Показать пароль</button>
-                <button></button>
+                <button class="show-pass">Показать пароль</button>
+                <button id="fin" type="submit">Отправить</button>
             </div>
         </form>
-        <h1>Волгин 211-324</h1>
-    </main>
-    <script src="main.js"></script>
+    </div>
+    <h1>Волгин 211-324</h1>
+    <script src="main.js" defer></script>
 </body>
 </html>
