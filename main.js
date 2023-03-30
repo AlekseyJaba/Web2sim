@@ -66,6 +66,7 @@ window.onclick = function(event){
 showpass.addEventListener("pointerup", ShowPass);
 showpass.addEventListener("pointerdown", ShowPass);
 form.querySelectorAll("input").forEach(input => {
+    console.log("+");
     input.addEventListener("blur", CheckDate)
 })
 
